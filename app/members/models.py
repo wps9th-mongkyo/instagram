@@ -9,3 +9,6 @@ class User(AbstractUser):
         '소개',
         blank=True,
     )
+
+    def __str__(self):
+        return self.username
